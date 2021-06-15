@@ -1,0 +1,297 @@
+/*ヘッダー領域*/
+#top {
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+header section {
+  float: right;
+  display: flex;
+  margin-right: 20px;
+  align-items: baseline;
+  font: 18px "ヒラギノ角ゴ ProN", serif;
+}
+#headerright {
+  display: flex;
+  list-style-type: none;
+  color: #580e43;
+  margin-top: 10px;
+}
+#headerright li {
+  margin-right: 20px;
+}
+#search {
+  display: flex;
+}
+nav ul {
+  clear: both;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  background-color: #580e43;
+  color: white;
+  font: 20px/3 "ヒラギノ角ゴ ProN", serif;
+  margin-bottom: 0;
+}
+/*メイン領域 メインビジュアル*/
+.mainvisual {
+  position: relative;
+}
+#slide {
+  width: 1384px;
+  height: 598px;
+  margin-top: 0;
+  margin: auto;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+#slide li {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+#slide li:nth-child(1) {
+  background-image: url("miu-assets/main1.png");
+  background-size: cover;
+  animation: slideAnime 20s linear 0s infinite;
+}
+#slide li:nth-child(2) {
+  background-image: url("miu-assets/main2.png");
+  background-size: cover;
+  animation: slideAnime 20s linear 5s infinite;
+}
+#slide li:nth-child(3) {
+  background-image: url("miu-assets/main3.png");
+  background-size: cover;
+  animation: slideAnime 20s linear 10s infinite;
+}
+#slide li:nth-child(4) {
+  background-image: url("miu-assets/main4.png");
+  background-size: cover;
+  animation: slideAnime 20s linear 15s infinite;
+}
+@keyframes slideAnime {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#request {
+  position: absolute;
+  right: 0;
+  bottom: 65px;
+  z-index: 100;
+}
+/*入試情報など*/
+#subcontents {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  font-family: "ヒラギノ角ゴ ProN", serif;
+  margin-top: -30px;
+  margin-right: 90px;
+}
+.s1 {
+  float: left;
+  font-size: 15px;
+  margin-top: -3px;
+  padding-left: 50px;
+}
+.s2, #s3 {
+  float: left;
+  margin-top: 20px;
+  padding-right: 30px;
+  padding-left: 20px;
+}
+.s1 p {
+  margin-top: -18px;
+}
+#s3 {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin-top: -7px;
+}
+#s3 p:nth-of-type(1) {
+  position: absolute;
+  z-index: 2;
+}
+#s3 p:nth-of-type(2) {
+  position: absolute;
+  z-index: 1;
+  top: 15px;
+  left: 60px;
+}
+.line {
+  width: 1px;
+  height: 60px;
+  border-left: thick solid;
+  float: right;
+  margin-top: 19px;
+  margin-left: 20px;
+}
+/*NEWS*/
+#news {
+  background-color: #f4f3f4;
+  color: #580e43;
+  font-family: "ヒラギノ角ゴ ProN", serif;
+  clear: both;
+  margin-top: -50px;
+}
+#news h2 {
+  font-size: 50px;
+  text-align: center;
+  line-height: 2.5;
+}
+#news1 {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin-top: -45px;
+  margin-left: 41.5px;
+}
+#news1 li {
+  margin-right: 80px;
+}
+table {
+  margin-left: 110px;
+  margin-top: 25px;
+  font-size: 20px;
+  text-align: left;
+  color: black;
+  padding-bottom: 35px;
+}
+/*学長メッセージ*/
+#message {
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 25px;
+  margin-left: 140px;
+  font-family: "ヒラギノ角ゴ ProN", serif;
+}
+#figure {
+  padding-top: 273px;
+  margin-left: 10px;
+}
+#m1 {
+  font-size: 28px;
+  font-weight: bold;
+}
+#m2 {
+  background: linear-gradient(transparent 50%, yellow 50%);
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1;
+  margin-top: -20px;
+}
+#m3 {
+  font-size: 20px;
+}
+#points1, #points2 {
+  display: flex;
+  justify-content: center;
+  margin-left: 20px;
+}
+#points1 {
+  margin-bottom: 15px;
+}
+#points2 {
+  margin-bottom: 120px;
+}
+#points1 div {
+  margin-right: 20px;
+}
+#points2 div {
+  margin-right: 20px;
+}
+/*学部紹介*/
+#departments {
+  text-align: center;
+  background-color: #f4f3f4;
+  color: #580e43;
+  margin-top: -45px;
+  padding-bottom: 10px;
+  font-family: "ヒラギノ角ゴ ProN", serif;
+}
+#departments h2 {
+  font-size: 50px;
+  line-height: 2.5;
+}
+#departments p {
+  font-size: 20px;
+  margin-top: -60px;
+  color: black;
+}
+#link {
+  float: right;
+  font-family: "ヒラギノ角ゴ ProN", serif;
+  margin-bottom: 40px;
+  margin-right: 40px;
+}
+.slider1 {
+  display: flex;
+  height: auto;
+  justify-content: space-around;
+}
+.slider {
+  display: block;
+  height: auto;
+}
+/*フッター領域*/
+footer {
+  clear: both;
+  background-color: #580e43;
+  color: white;
+  font-family: "ヒラギノ角ゴ ProN", serif;
+}
+footer section {
+  display: flex;
+  padding-top: 10px;
+}
+#address {
+  font-style: normal;
+}
+#f3 ul, #f4 ul {
+  list-style-type: none;
+}
+#f1 {
+  margin-left: 40px;
+}
+#f2 {
+  margin: auto;
+  margin-bottom: 50px;
+}
+#f2 img {
+  margin-left: 8px;
+}
+#f4 {
+  margin-right: 40px;
+}
+#footerlogo {
+  text-align: center;
+  margin-top: -30px;
+}
+#copyright {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
